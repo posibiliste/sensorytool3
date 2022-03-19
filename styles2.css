@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+html,body{
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  background: #FCF4DB;
+  color: #392F5A;
+  overflow: scroll;
+
+
+}
+
+/*columns, buttons have a container*/
+.cont0, .cont1,.cont2a, .cont3,.subtitle{
+  display: flex;
+  flex-direction: column;
+}
+
+.cont0{
+  width:100%;
+  align-items: center;
+}
+.cont1 {
+  width: 30%;
+  align-items: flex-end;
+  height: 100%;
+}
+.form{
+  width:100%;
+  align-items:center;
+
+
+}
+.cont2a{
+  width:100%;
+  align-items:center;
+  height: auto;
+}
+.cont3 {
+  width: 25%;
+  align-items: flex-start;
+  height: auto;
+}
+.buttons{
+  display: inline-flex;
+  justify-content: space-between;
+  /*position: relative;*/
+  width:100%;
+}
+
+
+/* progress bar */
+h1{
+  font-weight: bolder;
+  margin-bottom: .33rem;
+  margin-top: 1.33rem;
+}
+#textprogress{
+display: none;
+}
+progress {
+appearance:none;
+height:.66rem;
+margin-top: .66rem;
+margin-bottom: 0rem;
+}
+progress::-webkit-progress-bar {
+  background-color: white;
+  border-radius:.33rem;
+}
+progress::-webkit-progress-value {
+  background-color: #59BEB3;
+  border-radius:.33rem;
+}
+
+
+/*subtitle*/
+.subtitle{
+  margin-top: 1rem;
+  display: flex;
+  align-items: flex-start;
+  width:80%;
+}
+h2 {
+font-weight: bold;
+}
+
+/*questions*/
+/*includes environment and participation*/
+.block-question, .block-question2{
+  /*align-items: center;*/
+  margin-bottom: auto;
+  /*display: inline-flex;*/
+  width:100%;
+
+}
+.block-question2{
+  background: white;
+}
+h3{
+  font-weight: bold;
+  /*display: inline-flex;*/
+  margin-bottom: auto;
+  text-align: left;
+  /*align-items: flex-start;*/
+}
+
+.questionText,.phrase{
+  display: inline-flex;
+   width:80%;
+   padding:0;
+ }
+
+.questionText{
+   margin-top: 0;
+   margin-bottom: 0;
+}
+.phrase{
+  margin-bottom: 2vh;
+  position: relative;
+  justify-content: center;
+}
+
+  /* slider */
+  .graphicSlider{
+    display: inline-flex;
+      flex-flow: row;
+      width:80%;
+      padding: 0;
+  }
+.range{
+  /*display: inline-grid;*/
+  margin-bottom: 3vh;
+  width:100%;
+
+}
+
+/*emojis and signs*/
+.sign-left, .sign-right{
+    font-size: 6vh;
+    color: #FF8811;
+    /*line-height: 5%;*/
+    /*top:.66rem;*/
+}
+.sign-left,.emoji-left{
+  text-align: left;
+  margin-right: .5rem;
+}
+.sign-right,.emoji-right{
+  text-align: right;
+  margin-left:.5rem;
+}
+.emoji-right, .emoji-left{
+  font-size: 3vh;
+}
+
+
+.range input{
+  -webkit-appearance: none;
+  width: 100%;
+  height: .8vh;
+  background: #FF8811;/*naranja*/
+  border-radius: .33rem;
+  outline: none;
+  border: none;
+  z-index: 2222;
+  margin-top: 2.1rem;
+}
+.range input:hover{
+  cursor: pointer;
+}
+.range input::-webkit-slider-thumb{
+ -webkit-appearance: none;
+  cursor: pointer;
+  height:5vh;
+  width:5vh;
+  background: #59BEB3;
+  border: .2rem solid white;
+  z-index: -1;
+  transform: translateY(-80%)rotate(45deg);
+  box-shadow: 5px 5px 0px rgba(0,0,0,0.1);
+  border-bottom-left-radius:50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+
+.range input::-moz-range-thumb{
+  -webkit-appearance: none;
+  width: 1.33rem;
+  height: 1.33rem;
+  background: red;
+  border-radius: 50%;
+  background: #59BEB3;
+  border: .0667rem solid #59BEB3;
+  cursor: pointer;
+}
+.range input::-moz-range-progress{
+  background: #664AFF; //this progress background is only shown on Firefox
+}
+
+
+
+/*buttons*/
+/*footer{
+  display: flex;
+  flex-flow: column;
+}*/
+.previous, .next{
+    margin-top: auto;
+    font-size: 1.33rem;
+    height:2rem;
+    line-height: 1rem;
+    width:100%;
+}
+/*.previous{
+  /*position: absolute;
+  left:6.66rem;*/
+/*  background-color: none;
+  background: none;
+  border: none;
+  /*float:left;*/
+  /*margin-left: 1rem;*/
+/*}
+/*.previous a{
+  color:#59BEB3;
+  background-color: none;
+}*/
+
+.next{
+  background-color:#59BEB3;
+  border-color: #59BEB3;
+  border-radius:3vh;
+  padding:1vh;
+  box-shadow: none;
+  width:auto;
+  /*float: right;*/
+  /*margin-right: 1rem;*/
+
+}
+button a{
+  text-decoration-line: none;
+  font-weight: bold;
+  color:white;
+}
+
+button:active {
+  transform: translateY(.33rem);
+}
