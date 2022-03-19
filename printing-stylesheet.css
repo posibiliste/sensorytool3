@@ -1,20 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
-
-
-
 @media print {
-  *{
-    margin-bottom: 1rem;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
+  .navigation {
+    display: none;
   }
-.graphicSlider{
-  display: none;
-}
 }
 
-@media only screen {
 *{
   margin: 0;
   padding: 0;
@@ -29,37 +19,9 @@ html,body{
   text-align: center;
   background: #FCF4DB;
   color: #392F5A;
-  /*overflow: scroll;*/
-}
-.scrollindicator{
-	width: 100%;
-	height: 7px; /* height of progress bar */
-	display: block;
-	background: white;
-	left: 0;
-	bottom: 0; /* dock progress bar to bottom of page (change to "top" for top instead) */
-	cursor: pointer;
-	position: fixed;
-	z-index: 1000000;
-	visibility: hidden;
-	-webkit-transition: height .2s ease;
-	transition: height .2s ease;
-}
+  overflow: scroll;
 
-.scrollprogress{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background: #59BEB3; /* background color of progress bar */
-	-webkit-transform: translate3d(-100%,0,0);
-	transform: translate3d(-100%,0,0);
-	=-webkit-transition: -webkit-transform .4s ease;
-	transition: transform .4s ease; /* animate progress bar? Remove to disable */
-}
-header{
-  position: fixed;
-  z-index: 5;
-  background: #FCF4DB;
+
 }
 
 /*columns, buttons have a container*/
@@ -114,7 +76,7 @@ progress {
 appearance:none;
 height:.66rem;
 margin-top: .66rem;
-margin-bottom: 1rem;
+margin-bottom: 0rem;
 }
 progress::-webkit-progress-bar {
   background-color: white;
@@ -128,8 +90,8 @@ progress::-webkit-progress-value {
 
 /*subtitle*/
 .subtitle{
-  margin-top: 8rem;
-  margin-bottom: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   display: flex;
   align-items: flex-start;
   width:80%;
@@ -142,17 +104,13 @@ font-weight: bold;
 /*includes environment and participation*/
 .block-question, .block-question2{
   /*align-items: center;*/
-  padding-top:1rem;
   margin-bottom: 2rem;
   /*display: inline-flex;*/
-  width:80%;
-  display: flex;
-  flex-flow: column;
-  align-items: flex-end;
+  width:100%;
 
 }
 .block-question2{
-  /*background: #FEF9ED;*/
+  background: white;
 }
 h3{
   font-weight: bold;
@@ -233,7 +191,7 @@ h3{
   width:2.5rem;
   background: #59BEB3;
   border: .2rem solid white;
-  /*z-index: -1;*/
+  z-index: -1;
   transform: translateY(-80%)rotate(45deg);
   box-shadow: 5px 5px 0px rgba(0,0,0,0.1);
   border-bottom-left-radius:50%;
@@ -265,7 +223,6 @@ h3{
 }*/
 .previous, .next{
     margin-top: auto;
-    margin-bottom: 1rem;
     font-size: 1.33rem;
     height:2rem;
     line-height: 1rem;
@@ -292,11 +249,9 @@ h3{
   padding:1vh;
   box-shadow: none;
   width:auto;
-  text-decoration-line: none;
-  font-weight: bold;
-  color:white;
   /*float: right;*/
   /*margin-right: 1rem;*/
+
 }
 button a{
   text-decoration-line: none;
@@ -306,5 +261,4 @@ button a{
 
 button:active {
   transform: translateY(.33rem);
-}
 }
