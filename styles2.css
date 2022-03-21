@@ -33,11 +33,11 @@ html,body{
 }
 .scrollindicator{
 	width: 100%;
-	height: 7px; /* height of progress bar */
+	height: 2vh; /* height of progress bar */
 	display: block;
 	background: white;
 	left: 0;
-	top: 4rem; /* dock progress bar to bottom of page (change to "top" for top instead) */
+	top: 0; /* dock progress bar to bottom of page (change to "top" for top instead) */
 	cursor: pointer;
 	position: fixed;
 	z-index: 1000000;
@@ -60,6 +60,7 @@ header{
   position: fixed;
   z-index: 5;
   background: #FCF4DB;
+  margin-top: 1vh;
 }
 
 /*columns, buttons have a container*/
@@ -104,7 +105,7 @@ header{
 /* progress bar */
 h1{
   font-weight: bolder;
-  margin-bottom: .33rem;
+  margin-bottom: 0;
   margin-top: 1.33rem;
 }
 #textprogress{
