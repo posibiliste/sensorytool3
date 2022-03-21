@@ -37,7 +37,7 @@ html,body{
 	display: block;
 	background: white;
 	left: 0;
-	bottom: 0; /* dock progress bar to bottom of page (change to "top" for top instead) */
+	top: 4rem; /* dock progress bar to bottom of page (change to "top" for top instead) */
 	cursor: pointer;
 	position: fixed;
 	z-index: 1000000;
