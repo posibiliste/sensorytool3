@@ -286,6 +286,9 @@ h4{
   display: flex;
   flex-flow: column;
 }*/
+button{
+  appearance:none;
+}
 .previous, .next{
     margin-top: auto;
     margin-bottom: 1rem;
