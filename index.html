@@ -21,283 +21,169 @@
   <div class="cont2a">
     <div class="subtitle">
      <h2> Auditory </h2>
+     <h4> Rate the environmental qualities of the setting you are in and the impact it has on your participation </h4>
    </div>
  </div>
 
-  <!--Q-->
+<!--Q-->
   <!--rate environment-->
     <div class="block-question">
       <div class="questionText">
-       <h3 > Rating of the environmental feature </h3>
+       <h3> General ambient background noise (fan, chatter, movement noises) </h3>
       </div>
       <div class="phrase">
-       <p id="phrase">zero</p>
+       <p id="phrase1feat">Move the slider below</p>
       </div>
-
-<div class="graphicSlider">
-  <p class="sign-left">-</p>
-    <div class="range">
-      <!--text value of sliders-->
-      <input id="q1in" oninput="showPhrase(this.value)" type="range" min="0" max="6" value="0" steps="1">
+     <!-- slider-->
+    <div class="graphicSlider">
+     <p class="sign-left">-</p>
+     <div class="range">
+     <input id="range1" oninput="showPhrase(this.value)" type="range" min="0" max="6" value="0" steps="1">
+     </div>
+     <p class="sign-right">+</p>
     </div>
-  <p class="sign-right">+</p>
-</div>
-
-<!--participation-->
+ <!--participation-->
    <div class="questionText">
-      <h3> Impact on participation  </h3>
+      <h3 class="part"> Impact of feature on my participation  </h3>
    </div>
-   <div class="phrase">
-     <p> phrase </p>
+   <div class="phrase" id="phrase1part">
+     <p> Move the slider below </p>
    </div>
-
+    <!-- slider-->
    <div class="graphicSlider">
-     <p class="emoji-left">&#128522;</p>
-       <div class="range">
-         <!--text value of sliders-->
-         <input id="q2in" oninput="showPhrase(this.value)" type="range" min="0" max="6" value="3" steps="1">
-       </div>
-     <p class="emoji-right">&#128534;</p>
+    <p class="emoji-left">&#128534;</p>
+    <div class="range">
+     <input id="range1a" oninput="showPhrase1a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+    </div>
+     <p class="emoji-right">&#128522;</p>
    </div>
+  </div>
+
+
+  <!--Q-->
+    <!--rate environment-->
+      <div class="block-question">
+        <div class="questionText">
+         <h3> Specific noises (voices, a machine) </h3>
+        </div>
+        <div class="phrase">
+         <p id="phrase2feat">Move the slider below</p>
+        </div>
+       <!-- slider-->
+      <div class="graphicSlider">
+       <p class="sign-left">-</p>
+       <div class="range">
+       <input id="range2" oninput="showPhrase2(this.value)" type="range" min="0" max="6" value="0" steps="1">
+       </div>
+       <p class="sign-right">+</p>
+      </div>
+   <!--participation-->
+     <div class="questionText">
+        <h3 class="part"> Impact of feature on my participation  </h3>
+     </div>
+     <div class="phrase" id="phrase2part">
+       <p> Move the slider below </p>
+     </div>
+      <!-- slider-->
+     <div class="graphicSlider">
+      <p class="emoji-left">&#128534;</p>
+      <div class="range">
+       <input id="range2a" oninput="showPhrase2a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+      </div>
+       <p class="emoji-right">&#128522;</p>
+     </div>
     </div>
 
     <!--Q-->
-    <!--rate environment-->
-      <div class="block-question2">
-        <div class="questionText">
-         <h3 > Rating of the environmental feature </h3>
-        </div>
-        <div class="phrase">
-         <p id="phrase">zero</p>
-        </div>
-
-  <div class="graphicSlider">
-    <p class="sign-left">-</p>
-      <div class="range">
-        <!--text value of sliders-->
-        <input id="q1in" oninput="showPhrase(this.value)" type="range" min="0" max="6" value="0" steps="1">
-      </div>
-    <p class="sign-right">+</p>
-  </div>
-
-  <!--participation-->
-     <div class="questionText">
-        <h3> Impact on participation  </h3>
-     </div>
-     <div class="phrase">
-       <p> phrase </p>
-     </div>
-
-     <div class="graphicSlider">
-       <p class="emoji-left">&#128522;</p>
-         <div class="range">
-           <!--text value of sliders-->
-           <input id="q2in" oninput="showPhrase(this.value)" type="range" min="0" max="6" value="3" steps="1">
-         </div>
-       <p class="emoji-right">&#128534;</p>
-     </div>
-      </div>
-
-      <!--Q-->
       <!--rate environment-->
         <div class="block-question">
           <div class="questionText">
-           <h3 > Rating of the environmental feature </h3>
+           <h3> Intermittent noise (unpredictable) </h3>
           </div>
           <div class="phrase">
-           <p id="phrase">zero</p>
+           <p id="phrase3feat">Move the slider below</p>
           </div>
-
-    <div class="graphicSlider">
-      <p class="sign-left">-</p>
-        <div class="range">
-          <!--text value of sliders-->
-          <input id="q1in" oninput="showPhrase(this.value)" type="range" min="0" max="6" value="0" steps="1">
+         <!-- slider-->
+        <div class="graphicSlider">
+         <p class="sign-left">-</p>
+         <div class="range">
+         <input id="range3" oninput="showPhrase3(this.value)" type="range" min="0" max="6" value="0" steps="1">
+         </div>
+         <p class="sign-right">+</p>
         </div>
-      <p class="sign-right">+</p>
-    </div>
-
-    <!--participation-->
+     <!--participation-->
        <div class="questionText">
-          <h3> Impact on participation  </h3>
+          <h3 class="part"> Impact of feature on my participation  </h3>
        </div>
-       <div class="phrase">
-         <p> phrase </p>
+       <div class="phrase" id="phrase3part">
+         <p> Move the slider below </p>
        </div>
-
+        <!-- slider-->
        <div class="graphicSlider">
-         <p class="emoji-left">&#128522;</p>
-           <div class="range">
-             <!--text value of sliders-->
-             <input id="q2in" oninput="showPhrase(this.value)" type="range" min="0" max="6" value="3" steps="1">
-           </div>
-         <p class="emoji-right">&#128534;</p>
-       </div>
+        <p class="emoji-left">&#128534;</p>
+        <div class="range">
+         <input id="range3a" oninput="showPhrase3a(this.value)" type="range" min="0" max="6" value="3" steps="1">
         </div>
-
-        <!--Q-->
-        <!--rate environment-->
-          <div class="block-question2">
-            <div class="questionText">
-             <h3 > Rating of the environmental feature </h3>
-            </div>
-            <div class="phrase">
-             <p id="phrase">zero</p>
-            </div>
-
-      <div class="graphicSlider">
-        <p class="sign-left">-</p>
-          <div class="range">
-            <!--text value of sliders-->
-            <input id="q1in" oninput="showPhrase(this.value)" type="range" min="0" max="6" value="0" steps="1">
-          </div>
-        <p class="sign-right">+</p>
+         <p class="emoji-right">&#128522;</p>
+       </div>
       </div>
 
-      <!--participation-->
-         <div class="questionText">
-            <h3> Impact on participation  </h3>
-         </div>
-         <div class="phrase">
-           <p> phrase </p>
-         </div>
-
-         <div class="graphicSlider">
-           <p class="emoji-left">&#128522;</p>
-             <div class="range">
-               <!--text value of sliders-->
-               <input id="q2in" oninput="showPhrase(this.value)" type="range" min="0" max="6" value="3" steps="1">
-             </div>
-           <p class="emoji-right">&#128534;</p>
-         </div>
-          </div>
-
-          <!--Q-->
-          <!--rate environment-->
-            <div class="block-question">
-              <div class="questionText">
-               <h3 > Rating of the environmental feature </h3>
-              </div>
-              <div class="phrase">
-               <p id="phrase">zero</p>
-              </div>
-
-        <div class="graphicSlider">
-          <p class="sign-left">-</p>
-            <div class="range">
-              <!--text value of sliders-->
-              <input id="q1in" oninput="showPhrase(this.value)" type="range" min="0" max="6" value="0" steps="1">
+      <!--Q-->
+        <!--rate environment-->
+          <div class="block-question">
+            <div class="questionText">
+             <h3> Cueing noises (calling a person’s name, bell) </h3>
             </div>
-          <p class="sign-right">+</p>
+            <div class="phrase">
+             <p id="phrase4feat">Move the slider below</p>
+            </div>
+           <!-- slider-->
+          <div class="graphicSlider">
+           <p class="sign-left">-</p>
+           <div class="range">
+           <input id="range4" oninput="showPhrase4(this.value)" type="range" min="0" max="6" value="0" steps="1">
+           </div>
+           <p class="sign-right">+</p>
+          </div>
+       <!--participation-->
+         <div class="questionText">
+            <h3 class="part"> Impact of feature on my participation  </h3>
+         </div>
+         <div class="phrase" id="phrase4part">
+           <p> Move the slider below </p>
+         </div>
+          <!-- slider-->
+         <div class="graphicSlider">
+          <p class="emoji-left">&#128534;</p>
+          <div class="range">
+           <input id="range4a" oninput="showPhrase4a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+          </div>
+           <p class="emoji-right">&#128522;</p>
+         </div>
         </div>
 
-        <!--participation-->
-           <div class="questionText">
-              <h3> Impact on participation  </h3>
-           </div>
-           <div class="phrase">
-             <p> phrase </p>
-           </div>
 
-           <div class="graphicSlider">
-             <p class="emoji-left">&#128522;</p>
-               <div class="range">
-                 <!--text value of sliders-->
-                 <input id="q2in" oninput="showPhrase(this.value)" type="range" min="0" max="6" value="3" steps="1">
-               </div>
-             <p class="emoji-right">&#128534;</p>
-           </div>
-            </div>
 
-            <!--Q-->
-            <!--rate environment-->
-              <div class="block-question2">
-                <div class="questionText">
-                 <h3 > Rating of the environmental feature </h3>
-                </div>
-                <div class="phrase">
-                 <p id="phrase">zero</p>
-                </div>
 
-          <div class="graphicSlider">
-            <p class="sign-left">-</p>
-              <div class="range">
-                <!--text value of sliders-->
-                <input id="q1in" oninput="showPhrase(this.value)" type="range" min="0" max="6" value="0" steps="1">
-              </div>
-            <p class="sign-right">+</p>
-          </div>
 
-          <!--participation-->
-             <div class="questionText">
-                <h3> Impact on participation  </h3>
-             </div>
-             <div class="phrase">
-               <p> phrase </p>
-             </div>
 
-             <div class="graphicSlider">
-               <p class="emoji-left">&#128522;</p>
-                 <div class="range">
-                   <!--text value of sliders-->
-                   <input id="q2in" oninput="showPhrase(this.value)" type="range" min="0" max="6" value="3" steps="1">
-                 </div>
-               <p class="emoji-right">&#128534;</p>
-             </div>
-              </div>
 
-              <!--Q-->
-              <!--rate environment-->
-                <div class="block-question">
-                  <div class="questionText">
-                   <h3 > Rating of the environmental feature </h3>
-                  </div>
-                  <div class="phrase">
-                   <p id="phrase">zero</p>
-                  </div>
 
-            <div class="graphicSlider">
-              <p class="sign-left">-</p>
-                <div class="range">
-                  <!--text value of sliders-->
-                  <input id="q1in" oninput="showPhrase(this.value)" type="range" min="0" max="6" value="0" steps="1">
-                </div>
-              <p class="sign-right">+</p>
-            </div>
-
-            <!--participation-->
-               <div class="questionText">
-                  <h3> Impact on participation  </h3>
-               </div>
-               <div class="phrase">
-                 <p> phrase </p>
-               </div>
-
-               <div class="graphicSlider">
-                 <p class="emoji-left">&#128522;</p>
-                   <div class="range">
-                     <!--text value of sliders-->
-                     <input id="q2in" oninput="showPhrase(this.value)" type="range" min="0" max="6" value="3" steps="1">
-                   </div>
-                 <p class="emoji-right">&#128534;</p>
-               </div>
-                </div>
 
 </form>
  <!--buttons -->
 
  <footer>
-
-<input type="button" class="next" onclick="window.print()" value="Print PDF">
+  <input type="button" class="next" onclick="window.print()" value="Print PDF">
 <!--<input type="button" class="next" onclick="GeneratePdf();" value="Print PDF">-->
-</footer>
-
-  </body>
+ </footer>
+</body>
   <!-- <script src="pdf.js">    </script> -->
   <!-- <script src="slider.js"></script> -->
-  <script src="phrase.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-  <script src="scrollbar.js">  </script>
-  </script>
+<script src="phrase.js"></script>
+<script src="phrase2.js"></script>
+<script src="phrase3.js"></script>
+<script src="phrase4.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="scrollbar.js"></script>
 </html>

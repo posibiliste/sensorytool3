@@ -163,10 +163,21 @@ h3{
   /*align-items: flex-start;*/
 }
 
+.part{
+ font-weight: bold;
+}
+
+h4{
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+}
+
 .questionText,.phrase{
   display: inline-flex;
    width:80%;
    padding:0;
+
  }
 
 .questionText{
@@ -177,6 +188,7 @@ h3{
   margin-bottom: 1rem;
   position: relative;
   justify-content: center;
+  height: 6vh;
 }
 
   /* slider */
