@@ -18,7 +18,7 @@
 <!--subtitle-->
 
 <form>
-  <div class="cont2a">
+  <div class="cont2a" id="auditory">
     <div class="subtitle">
      <h2> Auditory </h2>
      <h4> Rate the environmental qualities of the setting you are in and the impact it has on your participation </h4>
@@ -29,8 +29,13 @@
   <!--rate environment-->
     <div class="block-question">
       <div class="questionText">
-       <h3> General ambient background noise (fan, chatter, movement noises) </h3>
+       <h3> General ambient background noise (fan, chat, movement noises) </h3>
+       <div>
+        <h3 class="part"> How much of this feature is present?</h3>
+       </div>
       </div>
+
+
       <div class="phrase">
        <p id="phrase1feat">Move the slider below</p>
       </div>
@@ -65,6 +70,9 @@
       <div class="block-question">
         <div class="questionText">
          <h3> Specific noises (voices, a machine) </h3>
+         <div>
+          <h3 class="part"> How much of this feature is present?</h3>
+         </div>
         </div>
         <div class="phrase">
          <p id="phrase2feat">Move the slider below</p>
@@ -99,6 +107,9 @@
         <div class="block-question">
           <div class="questionText">
            <h3> Intermittent noise (unpredictable) </h3>
+           <div>
+            <h3 class="part"> How much of this feature is present?</h3>
+           </div>
           </div>
           <div class="phrase">
            <p id="phrase3feat">Move the slider below</p>
@@ -133,6 +144,9 @@
           <div class="block-question">
             <div class="questionText">
              <h3> Cueing noises (calling a person’s name, bell) </h3>
+             <div>
+              <h3 class="part"> How much of this feature is present?</h3>
+             </div>
             </div>
             <div class="phrase">
              <p id="phrase4feat">Move the slider below</p>
@@ -163,7 +177,733 @@
         </div>
 
 
+<!--- <div class="buttons">
+  <a href="#auditory" class="previous"> Previous </a>
+  <a href="#visual" class="next"> Next </a>
+</div> --->
+<!-- buttons -->
+<div class="buttons">
+  <section class="cont1">
+  <button type="button" class="previous">
+    <a href="#acivities">&laquo; Previous</a>
+  </button>
+</section>
+<section class="cont3">
+  <button type="button" class="next">
+    <a href="#visual"> Next &raquo;</a>
+  </button>
+</section>
+</div>
 
+
+
+
+
+<!--Visual-->
+<div class="cont2a" id="visual">
+  <div class="subtitle">
+   <h2> Visual </h2>
+   <h4> Rate the environmental qualities of the setting you are in and the impact it has on your participation </h4>
+ </div>
+</div>
+
+<!--Q-->
+<!--rate environment-->
+  <div class="block-question">
+    <div class="questionText">
+     <h3> General background (walls, workspaces) have objects on them </h3>
+     <div>
+      <h3 class="part"> How much of this feature is present?</h3>
+     </div>
+    </div>
+
+
+    <div class="phrase">
+     <p id="phrase5feat">Move the slider below</p>
+    </div>
+   <!-- slider-->
+  <div class="graphicSlider">
+   <p class="sign-left">-</p>
+   <div class="range">
+   <input id="range5" oninput="showPhrase5(this.value)" type="range" min="0" max="6" value="0" steps="1">
+   </div>
+   <p class="sign-right">+</p>
+  </div>
+<!--participation-->
+ <div class="questionText">
+    <h3 class="part"> Impact of feature on my participation  </h3>
+ </div>
+ <div class="phrase" id="phrase5part">
+   <p> Move the slider below </p>
+ </div>
+  <!-- slider-->
+ <div class="graphicSlider">
+  <p class="emoji-left">&#128534;</p>
+  <div class="range">
+   <input id="range5a" oninput="showPhrase5a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+  </div>
+   <p class="emoji-right">&#128522;</p>
+ </div>
+</div>
+
+
+<!--Q-->
+  <!--rate environment-->
+    <div class="block-question">
+      <div class="questionText">
+       <h3> Contrast in the visual environment (dark objects on light surfaces, light objects on dark surfaces) </h3>
+       <div>
+        <h3 class="part"> How much of this feature is present?</h3>
+       </div>
+      </div>
+      <div class="phrase">
+       <p id="phrase6feat">Move the slider below</p>
+      </div>
+     <!-- slider-->
+    <div class="graphicSlider">
+     <p class="sign-left">-</p>
+     <div class="range">
+     <input id="range6" oninput="showPhrase6(this.value)" type="range" min="0" max="6" value="0" steps="1">
+     </div>
+     <p class="sign-right">+</p>
+    </div>
+ <!--participation-->
+   <div class="questionText">
+      <h3 class="part"> Impact of feature on my participation  </h3>
+   </div>
+   <div class="phrase" id="phrase6part">
+     <p> Move the slider below </p>
+   </div>
+    <!-- slider-->
+   <div class="graphicSlider">
+    <p class="emoji-left">&#128534;</p>
+    <div class="range">
+     <input id="range6a" oninput="showPhrase6a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+    </div>
+     <p class="emoji-right">&#128522;</p>
+   </div>
+  </div>
+
+  <!--Q-->
+    <!--rate environment-->
+      <div class="block-question">
+        <div class="questionText">
+         <h3> Unexpected visual events </h3>
+         <div>
+          <h3 class="part"> How much of this feature is present?</h3>
+         </div>
+        </div>
+        <div class="phrase">
+         <p id="phrase7feat">Move the slider below</p>
+        </div>
+       <!-- slider-->
+      <div class="graphicSlider">
+       <p class="sign-left">-</p>
+       <div class="range">
+       <input id="range7" oninput="showPhrase7(this.value)" type="range" min="0" max="6" value="0" steps="1">
+       </div>
+       <p class="sign-right">+</p>
+      </div>
+   <!--participation-->
+     <div class="questionText">
+        <h3 class="part"> Impact of feature on my participation  </h3>
+     </div>
+     <div class="phrase" id="phrase7part">
+       <p> Move the slider below </p>
+     </div>
+      <!-- slider-->
+     <div class="graphicSlider">
+      <p class="emoji-left">&#128534;</p>
+      <div class="range">
+       <input id="range7a" oninput="showPhrase7a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+      </div>
+       <p class="emoji-right">&#128522;</p>
+     </div>
+    </div>
+
+    <!--Q-->
+      <!--rate environment-->
+        <div class="block-question">
+          <div class="questionText">
+           <h3> Moving visual environment (for example, other people are moving about or there is movement on screens or displays) </h3>
+           <div>
+            <h3 class="part"> How much of this feature is present?</h3>
+           </div>
+          </div>
+          <div class="phrase">
+           <p id="phrase8feat">Move the slider below</p>
+          </div>
+         <!-- slider-->
+        <div class="graphicSlider">
+         <p class="sign-left">-</p>
+         <div class="range">
+         <input id="range8" oninput="showPhrase8(this.value)" type="range" min="0" max="6" value="0" steps="1">
+         </div>
+         <p class="sign-right">+</p>
+        </div>
+     <!--participation-->
+       <div class="questionText">
+          <h3 class="part"> Impact of feature on my participation  </h3>
+       </div>
+       <div class="phrase" id="phrase8part">
+         <p> Move the slider below </p>
+       </div>
+        <!-- slider-->
+       <div class="graphicSlider">
+        <p class="emoji-left">&#128534;</p>
+        <div class="range">
+         <input id="range8a" oninput="showPhrase8a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+        </div>
+         <p class="emoji-right">&#128522;</p>
+       </div>
+      </div>
+
+
+
+<!-- buttons -->
+      <div class="buttons">
+        <section class="cont1">
+        <button type="button" class="previous">
+          <a href="#auditory">&laquo; Previous</a>
+        </button>
+      </section>
+      <section class="cont3">
+        <button type="button" class="next">
+          <a href="#touch"> Next &raquo;</a>
+        </button>
+      </section>
+      </div>
+
+<!-- touch -->
+<div class="cont2a" id="touch">
+  <div class="subtitle">
+   <h2> Touch </h2>
+   <h4> Rate the environmental qualities of the setting you are in and the impact it has on your participation </h4>
+ </div>
+</div>
+
+<!--Q-->
+<!--rate environment-->
+  <div class="block-question">
+    <div class="questionText">
+     <h3> Consistent contact with others/objects (e.g., tight sitting area, firm clothing)</h3>
+     <div>
+      <h3 class="part"> How much of this feature is present?</h3>
+     </div>
+    </div>
+
+
+    <div class="phrase">
+     <p id="phrase9feat">Move the slider below</p>
+    </div>
+   <!-- slider-->
+  <div class="graphicSlider">
+   <p class="sign-left">-</p>
+   <div class="range">
+   <input id="range9" oninput="showPhrase9(this.value)" type="range" min="0" max="6" value="0" steps="1">
+   </div>
+   <p class="sign-right">+</p>
+  </div>
+<!--participation-->
+ <div class="questionText">
+    <h3 class="part"> Impact of feature on my participation  </h3>
+ </div>
+ <div class="phrase" id="phrase9part">
+   <p> Move the slider below </p>
+ </div>
+  <!-- slider-->
+ <div class="graphicSlider">
+  <p class="emoji-left">&#128534;</p>
+  <div class="range">
+   <input id="range9a" oninput="showPhrase9a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+  </div>
+   <p class="emoji-right">&#128522;</p>
+ </div>
+</div>
+
+<!--Q-->
+<!--rate environment-->
+  <div class="block-question">
+    <div class="questionText">
+     <h3> Intermittent opportunities for contact (bumping into people/things)</h3>
+     <div>
+      <h3 class="part"> How much of this feature is present?</h3>
+     </div>
+    </div>
+
+
+    <div class="phrase">
+     <p id="phrase10feat">Move the slider below</p>
+    </div>
+   <!-- slider-->
+  <div class="graphicSlider">
+   <p class="sign-left">-</p>
+   <div class="range">
+   <input id="range10" oninput="showPhrase10(this.value)" type="range" min="0" max="6" value="0" steps="1">
+   </div>
+   <p class="sign-right">+</p>
+  </div>
+<!--participation-->
+ <div class="questionText">
+    <h3 class="part"> Impact of feature on my participation  </h3>
+ </div>
+ <div class="phrase" id="phrase10part">
+   <p> Move the slider below </p>
+ </div>
+  <!-- slider-->
+ <div class="graphicSlider">
+  <p class="emoji-left">&#128534;</p>
+  <div class="range">
+   <input id="range10a" oninput="showPhrase10a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+  </div>
+   <p class="emoji-right">&#128522;</p>
+ </div>
+</div>
+
+<!--Q-->
+<!--rate environment-->
+  <div class="block-question">
+    <div class="questionText">
+     <h3>Other touch events (e.g., breeze, fan blowing)</h3>
+     <div>
+      <h3 class="part">How much of this feature is present?</h3>
+     </div>
+    </div>
+
+
+    <div class="phrase">
+     <p id="phrase11feat">Move the slider below</p>
+    </div>
+   <!-- slider-->
+  <div class="graphicSlider">
+   <p class="sign-left">-</p>
+   <div class="range">
+   <input id="range11" oninput="showPhrase11(this.value)" type="range" min="0" max="6" value="0" steps="1">
+   </div>
+   <p class="sign-right">+</p>
+  </div>
+<!--participation-->
+ <div class="questionText">
+    <h3 class="part"> Impact of feature on my participation  </h3>
+ </div>
+ <div class="phrase" id="phrase11part">
+   <p> Move the slider below </p>
+ </div>
+  <!-- slider-->
+ <div class="graphicSlider">
+  <p class="emoji-left">&#128534;</p>
+  <div class="range">
+   <input id="range11a" oninput="showPhrase11a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+  </div>
+   <p class="emoji-right">&#128522;</p>
+ </div>
+</div>
+
+
+
+
+<!--buttons-->
+<div class="buttons">
+  <section class="cont1">
+  <button type="button" class="previous">
+    <a href="#visual">&laquo; Previous</a>
+  </button>
+</section>
+<section class="cont3">
+  <button type="button" class="next">
+    <a href="#movement"> Next &raquo;</a>
+  </button>
+</section>
+</div>
+
+
+
+
+<!-- movement-->
+<div class="cont2a" id="movement">
+  <div class="subtitle">
+   <h2> Movement Sense</h2>
+   <h4> Rate the environmental qualities of the setting you are in and the impact it has on your participation </h4>
+ </div>
+</div>
+
+<!--Q-->
+<!--rate environment-->
+  <div class="block-question">
+    <div class="questionText">
+     <h3> Predictable/routine movements needed/expected (e.g., getting in line)</h3>
+     <div>
+      <h3 class="part"> How much of this feature is present?</h3>
+     </div>
+    </div>
+
+
+    <div class="phrase">
+     <p id="phrase12feat">Move the slider below</p>
+    </div>
+   <!-- slider-->
+  <div class="graphicSlider">
+   <p class="sign-left">-</p>
+   <div class="range">
+   <input id="range12" oninput="showPhrase12(this.value)" type="range" min="0" max="6" value="0" steps="1">
+   </div>
+   <p class="sign-right">+</p>
+  </div>
+<!--participation-->
+ <div class="questionText">
+    <h3 class="part"> Impact of feature on my participation  </h3>
+ </div>
+ <div class="phrase" id="phrase12part">
+   <p> Move the slider below </p>
+ </div>
+  <!-- slider-->
+ <div class="graphicSlider">
+  <p class="emoji-left">&#128534;</p>
+  <div class="range">
+   <input id="range12a" oninput="showPhrase12a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+  </div>
+   <p class="emoji-right">&#128522;</p>
+ </div>
+</div>
+
+<!--Q-->
+<!--rate environment-->
+  <div class="block-question">
+    <div class="questionText">
+     <h3>Unpredictable movements needed/expected (losing balance)</h3>
+     <div>
+      <h3 class="part"> How much of this feature is present?</h3>
+     </div>
+    </div>
+
+
+    <div class="phrase">
+     <p id="phrase13feat">Move the slider below</p>
+    </div>
+   <!-- slider-->
+  <div class="graphicSlider">
+   <p class="sign-left">-</p>
+   <div class="range">
+   <input id="range13" oninput="showPhrase13(this.value)" type="range" min="0" max="6" value="0" steps="1">
+   </div>
+   <p class="sign-right">+</p>
+  </div>
+<!--participation-->
+ <div class="questionText">
+    <h3 class="part"> Impact of feature on my participation  </h3>
+ </div>
+ <div class="phrase" id="phrase13part">
+   <p> Move the slider below </p>
+ </div>
+  <!-- slider-->
+ <div class="graphicSlider">
+  <p class="emoji-left">&#128534;</p>
+  <div class="range">
+   <input id="range13a" oninput="showPhrase13a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+  </div>
+   <p class="emoji-right">&#128522;</p>
+ </div>
+</div>
+
+<!--Q-->
+<!--rate environment-->
+  <div class="block-question">
+    <div class="questionText">
+     <h3>Movement requirements are linear (walking, scooting, rolling in a chair)</h3>
+     <div>
+      <h3 class="part">How much of this feature is present?</h3>
+     </div>
+    </div>
+
+
+    <div class="phrase">
+     <p id="phrase14feat">Move the slider below</p>
+    </div>
+   <!-- slider-->
+  <div class="graphicSlider">
+   <p class="sign-left">-</p>
+   <div class="range">
+   <input id="range14" oninput="showPhrase14(this.value)" type="range" min="0" max="6" value="0" steps="1">
+   </div>
+   <p class="sign-right">+</p>
+  </div>
+<!--participation-->
+ <div class="questionText">
+    <h3 class="part"> Impact of feature on my participation  </h3>
+ </div>
+ <div class="phrase" id="phrase14part">
+   <p> Move the slider below </p>
+ </div>
+  <!-- slider-->
+ <div class="graphicSlider">
+  <p class="emoji-left">&#128534;</p>
+  <div class="range">
+   <input id="range14a" oninput="showPhrase14a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+  </div>
+   <p class="emoji-right">&#128522;</p>
+ </div>
+</div>
+<!--Q-->
+<!--rate environment-->
+  <div class="block-question">
+    <div class="questionText">
+     <h3>Movement requirements are angular (bending, twisting)</h3>
+     <div>
+      <h3 class="part">How much of this feature is present?</h3>
+     </div>
+    </div>
+
+
+    <div class="phrase">
+     <p id="phrase15feat">Move the slider below</p>
+    </div>
+   <!-- slider-->
+  <div class="graphicSlider">
+   <p class="sign-left">-</p>
+   <div class="range">
+   <input id="range15" oninput="showPhrase15(this.value)" type="range" min="0" max="6" value="0" steps="1">
+   </div>
+   <p class="sign-right">+</p>
+  </div>
+<!--participation-->
+ <div class="questionText">
+    <h3 class="part"> Impact of feature on my participation  </h3>
+ </div>
+ <div class="phrase" id="phrase15part">
+   <p> Move the slider below </p>
+ </div>
+  <!-- slider-->
+ <div class="graphicSlider">
+  <p class="emoji-left">&#128534;</p>
+  <div class="range">
+   <input id="range15a" oninput="showPhrase15a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+  </div>
+   <p class="emoji-right">&#128522;</p>
+ </div>
+</div>
+
+<!-- buttons -->
+<div class="buttons">
+  <section class="cont1">
+  <button type="button" class="previous">
+    <a href="#touch">&laquo; Previous</a>
+  </button>
+</section>
+<section class="cont3">
+  <button type="button" class="next">
+    <a href="#body"> Next &raquo;</a>
+  </button>
+</section>
+</div>
+
+
+
+
+
+
+<!-- body-->
+<div class="cont2a" id="body">
+  <div class="subtitle">
+   <h2> Body Position Sense</h2>
+   <h4> Rate the environmental qualities of the setting you are in and the impact it has on your participation </h4>
+ </div>
+</div>
+
+<!--Q-->
+<!--rate environment-->
+  <div class="block-question">
+    <div class="questionText">
+     <h3> Predictable/routine body positions needed</h3>
+     <div>
+      <h3 class="part"> How much of this feature is present?</h3>
+     </div>
+    </div>
+
+
+    <div class="phrase">
+     <p id="phrase16feat">Move the slider below</p>
+    </div>
+   <!-- slider-->
+  <div class="graphicSlider">
+   <p class="sign-left">-</p>
+   <div class="range">
+   <input id="range16" oninput="showPhrase16(this.value)" type="range" min="0" max="6" value="0" steps="1">
+   </div>
+   <p class="sign-right">+</p>
+  </div>
+<!--participation-->
+ <div class="questionText">
+    <h3 class="part"> Impact of feature on my participation  </h3>
+ </div>
+ <div class="phrase" id="phrase16part">
+   <p> Move the slider below </p>
+ </div>
+  <!-- slider-->
+ <div class="graphicSlider">
+  <p class="emoji-left">&#128534;</p>
+  <div class="range">
+   <input id="range16a" oninput="showPhrase16a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+  </div>
+   <p class="emoji-right">&#128522;</p>
+ </div>
+</div>
+
+<!--Q-->
+<!--rate environment-->
+  <div class="block-question">
+    <div class="questionText">
+     <h3>Constant challenges to postural control (unstable surfaces for sitting, walking)</h3>
+     <div>
+      <h3 class="part"> How much of this feature is present?</h3>
+     </div>
+    </div>
+
+
+    <div class="phrase">
+     <p id="phrase17feat">Move the slider below</p>
+    </div>
+   <!-- slider-->
+  <div class="graphicSlider">
+   <p class="sign-left">-</p>
+   <div class="range">
+   <input id="range17" oninput="showPhrase17(this.value)" type="range" min="0" max="6" value="0" steps="1">
+   </div>
+   <p class="sign-right">+</p>
+  </div>
+<!--participation-->
+ <div class="questionText">
+    <h3 class="part"> Impact of feature on my participation  </h3>
+ </div>
+ <div class="phrase" id="phrase17part">
+   <p> Move the slider below </p>
+ </div>
+  <!-- slider-->
+ <div class="graphicSlider">
+  <p class="emoji-left">&#128534;</p>
+  <div class="range">
+   <input id="range17a" oninput="showPhrase17a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+  </div>
+   <p class="emoji-right">&#128522;</p>
+ </div>
+</div>
+
+<!--Q-->
+<!--rate environment-->
+  <div class="block-question">
+    <div class="questionText">
+     <h3>Opportunities for body feedback occur (holding door, pushing a cart, wiping table or board)</h3>
+     <div>
+      <h3 class="part">How much of this feature is present?</h3>
+     </div>
+    </div>
+
+
+    <div class="phrase">
+     <p id="phrase18feat">Move the slider below</p>
+    </div>
+   <!-- slider-->
+  <div class="graphicSlider">
+   <p class="sign-left">-</p>
+   <div class="range">
+   <input id="range18" oninput="showPhrase18(this.value)" type="range" min="0" max="6" value="0" steps="1">
+   </div>
+   <p class="sign-right">+</p>
+  </div>
+<!--participation-->
+ <div class="questionText">
+    <h3 class="part"> Impact of feature on my participation  </h3>
+ </div>
+ <div class="phrase" id="phrase18part">
+   <p> Move the slider below </p>
+ </div>
+  <!-- slider-->
+ <div class="graphicSlider">
+  <p class="emoji-left">&#128534;</p>
+  <div class="range">
+   <input id="range18a" oninput="showPhrase18a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+  </div>
+   <p class="emoji-right">&#128522;</p>
+ </div>
+</div>
+
+<!-- buttons -->
+<div class="buttons">
+  <section class="cont1">
+  <button type="button" class="previous">
+    <a href="#movement">&laquo; Previous</a>
+  </button>
+</section>
+<section class="cont3">
+  <button type="button" class="next">
+    <a href="#smell"> Next &raquo;</a>
+  </button>
+</section>
+</div>
+
+
+
+
+<!-- smell-->
+<div class="cont2a" id="smell">
+  <div class="subtitle">
+   <h2> Smell</h2>
+   <h4> Rate the environmental qualities of the setting you are in and the impact it has on your participation </h4>
+ </div>
+</div>
+
+<!--Q-->
+<!--rate environment-->
+  <div class="block-question">
+    <div class="questionText">
+     <h3> Distinct smell in the context (air freshener, grass, sweaty bodies)</h3>
+     <div>
+      <h3 class="part"> How much of this feature is present?</h3>
+     </div>
+    </div>
+
+
+    <div class="phrase">
+     <p id="phrase19feat">Move the slider below</p>
+    </div>
+   <!-- slider-->
+  <div class="graphicSlider">
+   <p class="sign-left">-</p>
+   <div class="range">
+   <input id="range19" oninput="showPhrase19(this.value)" type="range" min="0" max="6" value="0" steps="1">
+   </div>
+   <p class="sign-right">+</p>
+  </div>
+<!--participation-->
+ <div class="questionText">
+    <h3 class="part"> Impact of feature on my participation  </h3>
+ </div>
+ <div class="phrase" id="phrase19part">
+   <p> Move the slider below </p>
+ </div>
+  <!-- slider-->
+ <div class="graphicSlider">
+  <p class="emoji-left">&#128534;</p>
+  <div class="range">
+   <input id="range19a" oninput="showPhrase19a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+  </div>
+   <p class="emoji-right">&#128522;</p>
+ </div>
+</div>
+
+
+<!-- buttons -->
+<div class="buttons">
+  <section class="cont1">
+  <button type="button" class="previous">
+    <a href="#body">&laquo; Previous</a>
+  </button>
+</section>
+<section class="cont3">
+  <button type="button" class="next">
+    <a href="#print"> Next &raquo;</a>
+  </button>
+</section>
+</div>
 
 
 
@@ -174,7 +914,7 @@
  <!--buttons -->
 
  <footer>
-  <input type="button" class="next" onclick="window.print()" value="Print PDF">
+  <input type="button" class="next print" onclick="window.print()" value="Print PDF">
 <!--<input type="button" class="next" onclick="GeneratePdf();" value="Print PDF">-->
  </footer>
 </body>
@@ -184,6 +924,21 @@
 <script src="phrase2.js"></script>
 <script src="phrase3.js"></script>
 <script src="phrase4.js"></script>
+<script src="phrase5.js"></script>
+<script src="phrase6.js"></script>
+<script src="phrase7.js"></script>
+<script src="phrase8.js"></script>
+<script src="phrase9.js"></script>
+<script src="phrase10.js"></script>
+<script src="phrase11.js"></script>
+<script src="phrase12.js"></script>
+<script src="phrase13.js"></script>
+<script src="phrase14.js"></script>
+<script src="phrase15.js"></script>
+<script src="phrase16.js"></script>
+<script src="phrase17.js"></script>
+<script src="phrase18.js"></script>
+<script src="phrase19.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="scrollbar.js"></script>
 </html>
