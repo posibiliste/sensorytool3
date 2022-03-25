@@ -57,6 +57,7 @@
 
 <!--Personal Data-->
 <fieldset>
+  <legend> Personal Details </legend>
 <div class="space" id="personal">
 </div>
 <section>
@@ -101,8 +102,7 @@
  </div>
 <h3>Setting for evaluation</h3>
 <div>
-  <input type="radio" id="lecture" name="setting" value="Lecture Hall"
-         checked aria-label="Lecture Hall">
+  <input type="radio" id="lecture" name="setting" value="Lecture Hall"checked aria-label="Lecture Hall">
   <label for="lecture">Lecture hall</label>
 </div>
 <div>
@@ -205,6 +205,7 @@
 
   <!--subtitle-->
 <fieldset>
+  <legend> Auditory </legend>
   <div class="cont2a" >
     <div class="subtitle">
      <h2> Auditory </h2>
@@ -230,7 +231,7 @@
     <div class="graphicSlider">
      <p class="sign-left">-</p>
      <div class="range">
-     <input id="range1" oninput="showPhrase(this.value)" type="range" min="0" max="6" value="0" steps="1">
+     <input id="range1" oninput="showPhrase(this.value)" type="range" min="0" max="6" value="0" steps="1" aria-label="range for general ambient background noise">
      </div>
      <p class="sign-right">+</p>
     </div>
@@ -245,7 +246,7 @@
    <div class="graphicSlider">
     <p class="emoji-left">&#128534;</p>
     <div class="range">
-     <input id="range1a" oninput="showPhrase1a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+     <input id="range1a" oninput="showPhrase1a(this.value)" type="range" min="0" max="6" value="3" steps="1" aria-label="range for impact on participation of general ambient background noise">
     </div>
      <p class="emoji-right">&#128522;</p>
    </div>
@@ -268,7 +269,7 @@
       <div class="graphicSlider">
        <p class="sign-left">-</p>
        <div class="range">
-       <input id="range2" oninput="showPhrase2(this.value)" type="range" min="0" max="6" value="0" steps="1">
+       <input id="range2" oninput="showPhrase2(this.value)" type="range" min="0" max="6" value="0" steps="1" aria-label="range for specific noises (voices, a machine) ">
        </div>
        <p class="sign-right">+</p>
       </div>
@@ -283,7 +284,7 @@
      <div class="graphicSlider">
       <p class="emoji-left">&#128534;</p>
       <div class="range">
-       <input id="range2a" oninput="showPhrase2a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+       <input id="range2a" oninput="showPhrase2a(this.value)" type="range" min="0" max="6" value="3" steps="1" aria-label="range for impact on participation of specific noises (voices, a machine) ">
       </div>
        <p class="emoji-right">&#128522;</p>
      </div>
@@ -305,7 +306,7 @@
         <div class="graphicSlider">
          <p class="sign-left">-</p>
          <div class="range">
-         <input id="range3" oninput="showPhrase3(this.value)" type="range" min="0" max="6" value="0" steps="1">
+         <input id="range3" oninput="showPhrase3(this.value)" type="range" min="0" max="6" value="0" steps="1" aria-label="range for Intermittent noise (unpredictable)">
          </div>
          <p class="sign-right">+</p>
         </div>
@@ -320,7 +321,7 @@
        <div class="graphicSlider">
         <p class="emoji-left">&#128534;</p>
         <div class="range">
-         <input id="range3a" oninput="showPhrase3a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+         <input id="range3a" oninput="showPhrase3a(this.value)" type="range" min="0" max="6" value="3" steps="1" aria-label="range for impact on participation of Intermittent noise (unpredictable)">
         </div>
          <p class="emoji-right">&#128522;</p>
        </div>
@@ -342,7 +343,7 @@
           <div class="graphicSlider">
            <p class="sign-left">-</p>
            <div class="range">
-           <input id="range4" oninput="showPhrase4(this.value)" type="range" min="0" max="6" value="0" steps="1">
+           <input id="range4" oninput="showPhrase4(this.value)" type="range" min="0" max="6" value="0" steps="1" aria-label="range for Cueing noises (calling a person’s name, bell)">
            </div>
            <p class="sign-right">+</p>
           </div>
@@ -357,7 +358,7 @@
          <div class="graphicSlider">
           <p class="emoji-left">&#128534;</p>
           <div class="range">
-           <input id="range4a" oninput="showPhrase4a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+           <input id="range4a" oninput="showPhrase4a(this.value)" type="range" min="0" max="6" value="3" steps="1" aria-label="range for impact on participation of Cueing noises (calling a person’s name, bell)">
           </div>
            <p class="emoji-right">&#128522;</p>
          </div>
@@ -390,6 +391,7 @@
 <div class="space"id="visual">
 </div>
 <fieldset>
+    <legend> Visual</legend>
 <div class="cont2a" >
   <div class="subtitle">
    <h2> Visual </h2>
@@ -415,7 +417,7 @@
   <div class="graphicSlider">
    <p class="sign-left">-</p>
    <div class="range">
-   <input id="range5" oninput="showPhrase5(this.value)" type="range" min="0" max="6" value="0" steps="1">
+   <input id="range5" oninput="showPhrase5(this.value)" type="range" min="0" max="6" value="0" steps="1" aria-label="range for General background (walls, workspaces) have objects on them">
    </div>
    <p class="sign-right">+</p>
   </div>
@@ -430,7 +432,7 @@
  <div class="graphicSlider">
   <p class="emoji-left">&#128534;</p>
   <div class="range">
-   <input id="range5a" oninput="showPhrase5a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+   <input id="range5a" oninput="showPhrase5a(this.value)" type="range" min="0" max="6" value="3" steps="1" aria-label="range for impact on participation of General background (walls, workspaces) have objects on them">
   </div>
    <p class="emoji-right">&#128522;</p>
  </div>
@@ -453,7 +455,7 @@
     <div class="graphicSlider">
      <p class="sign-left">-</p>
      <div class="range">
-     <input id="range6" oninput="showPhrase6(this.value)" type="range" min="0" max="6" value="0" steps="1">
+     <input id="range6" oninput="showPhrase6(this.value)" type="range" min="0" max="6" value="0" steps="1" aria-label="range for Contrast in the visual environment (dark objects on light surfaces, light objects on dark surfaces)">
      </div>
      <p class="sign-right">+</p>
     </div>
@@ -468,7 +470,7 @@
    <div class="graphicSlider">
     <p class="emoji-left">&#128534;</p>
     <div class="range">
-     <input id="range6a" oninput="showPhrase6a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+     <input id="range6a" oninput="showPhrase6a(this.value)" type="range" min="0" max="6" value="3" steps="1" aria-label="range for impact on participation of Contrast in the visual environment (dark objects on light surfaces, light objects on dark surfaces)">
     </div>
      <p class="emoji-right">&#128522;</p>
    </div>
@@ -490,7 +492,7 @@
       <div class="graphicSlider">
        <p class="sign-left">-</p>
        <div class="range">
-       <input id="range7" oninput="showPhrase7(this.value)" type="range" min="0" max="6" value="0" steps="1">
+       <input id="range7" oninput="showPhrase7(this.value)" type="range" min="0" max="6" value="0" steps="1"aria-label="range for Unexpected visual events">
        </div>
        <p class="sign-right">+</p>
       </div>
@@ -505,7 +507,7 @@
      <div class="graphicSlider">
       <p class="emoji-left">&#128534;</p>
       <div class="range">
-       <input id="range7a" oninput="showPhrase7a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+       <input id="range7a" oninput="showPhrase7a(this.value)" type="range" min="0" max="6" value="3" steps="1" aria-label="range for impact of participation of Unexpected visual events">
       </div>
        <p class="emoji-right">&#128522;</p>
      </div>
@@ -527,7 +529,7 @@
         <div class="graphicSlider">
          <p class="sign-left">-</p>
          <div class="range">
-         <input id="range8" oninput="showPhrase8(this.value)" type="range" min="0" max="6" value="0" steps="1">
+         <input id="range8" oninput="showPhrase8(this.value)" type="range" min="0" max="6" value="0" steps="1"aria-label="range for Moving visual environment (for example, other people are moving about or there is movement on screens or displays)">
          </div>
          <p class="sign-right">+</p>
         </div>
@@ -542,7 +544,7 @@
        <div class="graphicSlider">
         <p class="emoji-left">&#128534;</p>
         <div class="range">
-         <input id="range8a" oninput="showPhrase8a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+         <input id="range8a" oninput="showPhrase8a(this.value)" type="range" min="0" max="6" value="3" steps="1" aria-label="range for impact on participation for Moving visual environment (for example, other people are moving about or there is movement on screens or displays)">
         </div>
          <p class="emoji-right">&#128522;</p>
        </div>
@@ -571,6 +573,7 @@
 <div class="space" id="touch">
 </div>
 <fieldset>
+    <legend> Touch </legend>
 <div class="cont2a">
   <div class="subtitle">
    <h2> Touch </h2>
@@ -596,7 +599,7 @@
   <div class="graphicSlider">
    <p class="sign-left">-</p>
    <div class="range">
-   <input id="range9" oninput="showPhrase9(this.value)" type="range" min="0" max="6" value="0" steps="1">
+   <input id="range9" oninput="showPhrase9(this.value)" type="range" min="0" max="6" value="0" steps="1"aria-label="range for Consistent contact with others/objects (e.g., tight sitting area, firm clothing)">
    </div>
    <p class="sign-right">+</p>
   </div>
@@ -611,7 +614,7 @@
  <div class="graphicSlider">
   <p class="emoji-left">&#128534;</p>
   <div class="range">
-   <input id="range9a" oninput="showPhrase9a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+   <input id="range9a" oninput="showPhrase9a(this.value)" type="range" min="0" max="6" value="3" steps="1" aria-label="range for impact on participation for Consistent contact with others/objects (e.g., tight sitting area, firm clothing)"
   </div>
    <p class="emoji-right">&#128522;</p>
  </div>
@@ -635,7 +638,7 @@
   <div class="graphicSlider">
    <p class="sign-left">-</p>
    <div class="range">
-   <input id="range10" oninput="showPhrase10(this.value)" type="range" min="0" max="6" value="0" steps="1">
+   <input id="range10" oninput="showPhrase10(this.value)" type="range" min="0" max="6" value="0" steps="1" aria-label="range for Intermittent opportunities for contact (bumping into people/things)">
    </div>
    <p class="sign-right">+</p>
   </div>
@@ -650,7 +653,7 @@
  <div class="graphicSlider">
   <p class="emoji-left">&#128534;</p>
   <div class="range">
-   <input id="range10a" oninput="showPhrase10a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+   <input id="range10a" oninput="showPhrase10a(this.value)" type="range" min="0" max="6" value="3" steps="1" aria-label="range for impact on participation of Intermittent opportunities for contact (bumping into people/things)">
   </div>
    <p class="emoji-right">&#128522;</p>
  </div>
@@ -674,7 +677,7 @@
   <div class="graphicSlider">
    <p class="sign-left">-</p>
    <div class="range">
-   <input id="range11" oninput="showPhrase11(this.value)" type="range" min="0" max="6" value="0" steps="1">
+   <input id="range11" oninput="showPhrase11(this.value)" type="range" min="0" max="6" value="0" steps="1" aria-label="range for Other touch events (e.g., breeze, fan blowing)">
    </div>
    <p class="sign-right">+</p>
   </div>
@@ -689,7 +692,7 @@
  <div class="graphicSlider">
   <p class="emoji-left">&#128534;</p>
   <div class="range">
-   <input id="range11a" oninput="showPhrase11a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+   <input id="range11a" oninput="showPhrase11a(this.value)" type="range" min="0" max="6" value="3" steps="1" aria-label="range for impact on participation of Other touch events (e.g., breeze, fan blowing)">
   </div>
    <p class="emoji-right">&#128522;</p>
  </div>
@@ -720,6 +723,7 @@
 <div class="space" id="movement">
 </div>
 <fieldset>
+    <legend> Movement Sense </legend>
 <div class="cont2a">
   <div class="subtitle">
    <h2> Movement Sense</h2>
@@ -745,7 +749,7 @@
   <div class="graphicSlider">
    <p class="sign-left">-</p>
    <div class="range">
-   <input id="range12" oninput="showPhrase12(this.value)" type="range" min="0" max="6" value="0" steps="1">
+   <input id="range12" oninput="showPhrase12(this.value)" type="range" min="0" max="6" value="0" steps="1" aria-label="range for Predictable/routine movements needed/expected (e.g., getting in line)">
    </div>
    <p class="sign-right">+</p>
   </div>
@@ -760,7 +764,7 @@
  <div class="graphicSlider">
   <p class="emoji-left">&#128534;</p>
   <div class="range">
-   <input id="range12a" oninput="showPhrase12a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+   <input id="range12a" oninput="showPhrase12a(this.value)" type="range" min="0" max="6" value="3" steps="1" aria-label="range for impact on participation of Predictable/routine movements needed/expected (e.g., getting in line)">
   </div>
    <p class="emoji-right">&#128522;</p>
  </div>
@@ -784,7 +788,7 @@
   <div class="graphicSlider">
    <p class="sign-left">-</p>
    <div class="range">
-   <input id="range13" oninput="showPhrase13(this.value)" type="range" min="0" max="6" value="0" steps="1">
+   <input id="range13" oninput="showPhrase13(this.value)" type="range" min="0" max="6" value="0" steps="1" aria-label="range for Unpredictable movements needed/expected (losing balance)">
    </div>
    <p class="sign-right">+</p>
   </div>
@@ -799,7 +803,7 @@
  <div class="graphicSlider">
   <p class="emoji-left">&#128534;</p>
   <div class="range">
-   <input id="range13a" oninput="showPhrase13a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+   <input id="range13a" oninput="showPhrase13a(this.value)" type="range" min="0" max="6" value="3" steps="1" aria-label="range for impact on participation of Unpredictable movements needed/expected (losing balance)">
   </div>
    <p class="emoji-right">&#128522;</p>
  </div>
@@ -823,7 +827,7 @@
   <div class="graphicSlider">
    <p class="sign-left">-</p>
    <div class="range">
-   <input id="range14" oninput="showPhrase14(this.value)" type="range" min="0" max="6" value="0" steps="1">
+   <input id="range14" oninput="showPhrase14(this.value)" type="range" min="0" max="6" value="0" steps="1" aria-label="range for Movement requirements are linear (walking, scooting, rolling in a chair)">
    </div>
    <p class="sign-right">+</p>
   </div>
@@ -838,7 +842,7 @@
  <div class="graphicSlider">
   <p class="emoji-left">&#128534;</p>
   <div class="range">
-   <input id="range14a" oninput="showPhrase14a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+   <input id="range14a" oninput="showPhrase14a(this.value)" type="range" min="0" max="6" value="3" steps="1" aria-label="range for impact on participation of Movement requirements are linear (walking, scooting, rolling in a chair)">
   </div>
    <p class="emoji-right">&#128522;</p>
  </div>
@@ -861,7 +865,7 @@
   <div class="graphicSlider">
    <p class="sign-left">-</p>
    <div class="range">
-   <input id="range15" oninput="showPhrase15(this.value)" type="range" min="0" max="6" value="0" steps="1">
+   <input id="range15" oninput="showPhrase15(this.value)" type="range" min="0" max="6" value="0" steps="1" aria-label="range for Movement requirements are angular (bending, twisting)">
    </div>
    <p class="sign-right">+</p>
   </div>
@@ -876,7 +880,7 @@
  <div class="graphicSlider">
   <p class="emoji-left">&#128534;</p>
   <div class="range">
-   <input id="range15a" oninput="showPhrase15a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+   <input id="range15a" oninput="showPhrase15a(this.value)" type="range" min="0" max="6" value="3" steps="1" aria-label="range for impact on participation of Movement requirements are angular (bending, twisting)">
   </div>
    <p class="emoji-right">&#128522;</p>
  </div>
@@ -906,6 +910,7 @@
 <div class="space" id="body">
 </div>
 <fieldset>
+    <legend> Body Position Sense</legend>
 <div class="cont2a">
   <div class="subtitle">
    <h2> Body Position Sense</h2>
@@ -931,7 +936,7 @@
   <div class="graphicSlider">
    <p class="sign-left">-</p>
    <div class="range">
-   <input id="range16" oninput="showPhrase16(this.value)" type="range" min="0" max="6" value="0" steps="1">
+   <input id="range16" oninput="showPhrase16(this.value)" type="range" min="0" max="6" value="0" steps="1" aria-label="range for Predictable/routine body positions needed">
    </div>
    <p class="sign-right">+</p>
   </div>
@@ -946,7 +951,7 @@
  <div class="graphicSlider">
   <p class="emoji-left">&#128534;</p>
   <div class="range">
-   <input id="range16a" oninput="showPhrase16a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+   <input id="range16a" oninput="showPhrase16a(this.value)" type="range" min="0" max="6" value="3" steps="1" aria-label="range for impact on participation of Predictable/routine body positions needed">
   </div>
    <p class="emoji-right">&#128522;</p>
  </div>
@@ -970,7 +975,7 @@
   <div class="graphicSlider">
    <p class="sign-left">-</p>
    <div class="range">
-   <input id="range17" oninput="showPhrase17(this.value)" type="range" min="0" max="6" value="0" steps="1">
+   <input id="range17" oninput="showPhrase17(this.value)" type="range" min="0" max="6" value="0" steps="1" aria-label="range for Constant challenges to postural control (unstable surfaces for sitting, walking)">
    </div>
    <p class="sign-right">+</p>
   </div>
@@ -985,7 +990,7 @@
  <div class="graphicSlider">
   <p class="emoji-left">&#128534;</p>
   <div class="range">
-   <input id="range17a" oninput="showPhrase17a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+   <input id="range17a" oninput="showPhrase17a(this.value)" type="range" min="0" max="6" value="3" steps="1" aria-label="range for impact on participation of Constant challenges to postural control (unstable surfaces for sitting, walking)">
   </div>
    <p class="emoji-right">&#128522;</p>
  </div>
@@ -1009,7 +1014,7 @@
   <div class="graphicSlider">
    <p class="sign-left">-</p>
    <div class="range">
-   <input id="range18" oninput="showPhrase18(this.value)" type="range" min="0" max="6" value="0" steps="1">
+   <input id="range18" oninput="showPhrase18(this.value)" type="range" min="0" max="6" value="0" steps="1" aria-label="range for Opportunities for body feedback occur (holding door, pushing a cart, wiping table or board)">
    </div>
    <p class="sign-right">+</p>
   </div>
@@ -1024,7 +1029,7 @@
  <div class="graphicSlider">
   <p class="emoji-left">&#128534;</p>
   <div class="range">
-   <input id="range18a" oninput="showPhrase18a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+   <input id="range18a" oninput="showPhrase18a(this.value)" type="range" min="0" max="6" value="3" steps="1" aria-label="range for impact on participation of Opportunities for body feedback occur (holding door, pushing a cart, wiping table or board)">
   </div>
    <p class="emoji-right">&#128522;</p>
  </div>
@@ -1076,7 +1081,7 @@
   <div class="graphicSlider">
    <p class="sign-left">-</p>
    <div class="range">
-   <input id="range19" oninput="showPhrase19(this.value)" type="range" min="0" max="6" value="0" steps="1">
+   <input id="range19" oninput="showPhrase19(this.value)" type="range" min="0" max="6" value="0" steps="1" aria-label="range for Distinct smell in the context (air freshener, grass, sweaty bodies)">
    </div>
    <p class="sign-right">+</p>
   </div>
@@ -1091,7 +1096,7 @@
  <div class="graphicSlider">
   <p class="emoji-left">&#128534;</p>
   <div class="range">
-   <input id="range19a" oninput="showPhrase19a(this.value)" type="range" min="0" max="6" value="3" steps="1">
+   <input id="range19a" oninput="showPhrase19a(this.value)" type="range" min="0" max="6" value="3" steps="1" aria-label="range for impact on participation of Distinct smell in the context (air freshener, grass, sweaty bodies)">
   </div>
    <p class="emoji-right">&#128522;</p>
  </div>
@@ -1123,7 +1128,6 @@
 <section>
   <div class="space" id="print">
   </div>
-<fieldset>
 <div class="intro cont2a">
 <h2>Tool completed!</h2>
 </div>
@@ -1138,7 +1142,6 @@
 <div class="space">
 </div>
 </div>
-</fieldset>
 
 <!-- buttons -->
 <div class="buttons">
