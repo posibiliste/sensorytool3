@@ -56,6 +56,7 @@
 </div>
 
 <!--Personal Data-->
+<fieldset>
 <div class="space" id="personal">
 </div>
 <section>
@@ -101,81 +102,79 @@
 <h3>Setting for evaluation</h3>
 <div>
   <input type="radio" id="lecture" name="setting" value="Lecture Hall"
-         checked>
+         checked aria-label="Lecture Hall">
   <label for="lecture">Lecture hall</label>
 </div>
 <div>
- <input type="radio" id="laboratory" name="setting" value="laboratory">
- <label for="laboratory">laboratory</label>
+ <input type="radio" id="laboratory" name="setting" value="laboratory" aria-label="Laboratory">
+ <label for="laboratory">Laboratory</label>
 </div>
 <div>
- <input type="radio" id="social" name="setting" value="social-setting">
+ <input type="radio" id="social" name="setting" value="social-setting" aria-label="Social setting">
  <label for="social">Social setting</label>
 </div>
 <div>
- <input type="radio" id="outdoor" name="setting" value="outdoor-area">
+ <input type="radio" id="outdoor" name="setting" value="outdoor-area" aria-label="Outdoor area">
  <label for="outdoor">Outdoor Area</label>
 </div>
 <div>
- <input type="radio" id="office" name="setting" value="office">
- <label for="office">office</label>
+ <input type="radio" id="office" name="setting" value="office"aria-label="Office">
+ <label for="office">Office</label>
 </div>
 <div>
- <input type="radio" id="student" name="setting" value="student-accomodation">
+ <input type="radio" id="student" name="setting" value="student-accomodation" aria-label="Student accomodation"
  <label for="student">Student accomodation</label>
 </div>
 <div>
- <input type="radio" id="other" name="setting" value="other">
- <label for="other">Other</label>
- <label for="other-setting"> (Please type):</label>
- <input type="text" id="other-setting" name="other-setting" size="25">
+ <input type="radio" id="other" name="setting" value="other" aria-label="Other">
+ <label for="other">Other (Please type):</label>
+ <input type="text" id="other-setting" name="other-setting" size="25" aria-label="other setting text">
 </div>
 <h3>In this environment, what sort of activities you usually participate in?</h3>
 <div>
-  <input type="checkbox" id="class" name="activities" value="class" checked>
+  <input type="checkbox" id="class" name="activities" value="class" checked aria-label="Class for example lecture, tutorial or seminar">
   <label for="lecture">Class (lecture/tutorial/seminar)</label>
 </div>
 <div>
-  <input type="checkbox" id="practical" name="activities" value="practical-classes">
+  <input type="checkbox" id="practical" name="activities" value="practical-classes" aria-label="practical classes such as labs, studios or workshops">
   <label for="practical">Practical Classes (labs/studios/workshops)</label>
 </div>
 <div>
-  <input type="checkbox" id="study" name="activities" value="study">
+  <input type="checkbox" id="study" name="activities" value="study" aria-label="Study, writing assignments or self-directed learning">
   <label for="study">Study/Writing assignments/Self-Directed Learning</label>
 </div>
 <div>
-  <input type="checkbox" id="group" name="activities" value="group-work">
+  <input type="checkbox" id="group" name="activities" value="group-work" aria-label="group work">
   <label for="group">Group work</label>
 </div>
 <div>
-  <input type="checkbox" id="socialising" name="activities" value="socialising">
+  <input type="checkbox" id="socialising" name="activities" value="socialising" aria-label="socialising">
   <label for="socialising">Socialising</label>
 </div>
 <div>
-  <input type="checkbox" id="fun" name="activities" value="fun">
+  <input type="checkbox" id="fun" name="activities" value="fun" aria-label="fun or leisure activities">
   <label for="fun">Fun / Leisure activities</label>
 </div>
 <div>
-  <input type="checkbox" id="eat" name="activities" value="eating">
+  <input type="checkbox" id="eat" name="activities" value="eating" aria-label="eating">
   <label for="eat">Eating</label>
 </div>
 <div>
-  <input type="checkbox" id="self" name="activities" value="self-care">
+  <input type="checkbox" id="self" name="activities" value="self-care" aria-label="self-care activities">
   <label for="self">Self-care activities</label>
 </div>
 <div>
-  <input type="checkbox" id="physical" name="activities" value="physical-activities">
+  <input type="checkbox" id="physical" name="activities" value="physical-activities" aria-label="physical activities">
   <label for="physical">Physical activities</label>
 </div>
 <div>
-  <input type="checkbox" id="support" name="activities" value="support-services">
+  <input type="checkbox" id="support" name="activities" value="support-services" aria-label="support services">
   <label for="support">Support services</label>
 </div>
 <div>
- <input type="checkbox" id="other" name="activities" value="other">
- <label for="other">Other</label>
- <label for="other-activities"> (Please type):</label>
- <input type="text" id="other-activities" name="other-activities" size="25">
+ <input type="checkbox" id="other" name="activities" value="other" aria-label="checkbox for other">
+ <label for="other">Other (Please type):</label>
+ <input type="text" id="other-activities" name="other-activities" size="25" aria-label="text for other activities">
 </div>
 
 
@@ -183,6 +182,7 @@
 
 </div>
 </section>
+</fieldset>
 <div class="buttons">
   <section class="cont1">
   <button type="button" class="previous">
@@ -204,6 +204,7 @@
 
 
   <!--subtitle-->
+<fieldset>
   <div class="cont2a" >
     <div class="subtitle">
      <h2> Auditory </h2>
@@ -361,7 +362,7 @@
            <p class="emoji-right">&#128522;</p>
          </div>
         </div>
-
+</fieldset>
 <!--- <div class="buttons">
   <a href="#auditory" class="previous"> Previous </a>
   <a href="#visual" class="next"> Next </a>
@@ -388,6 +389,7 @@
 <!--Visual-->
 <div class="space"id="visual">
 </div>
+<fieldset>
 <div class="cont2a" >
   <div class="subtitle">
    <h2> Visual </h2>
@@ -546,7 +548,7 @@
        </div>
       </div>
 
-
+</fieldset>
 
 <!-- buttons -->
       <div class="buttons">
@@ -568,6 +570,7 @@
 <!-- touch -->
 <div class="space" id="touch">
 </div>
+<fieldset>
 <div class="cont2a">
   <div class="subtitle">
    <h2> Touch </h2>
@@ -692,7 +695,7 @@
  </div>
 </div>
 
-
+</fieldset>
 
 
 <!--buttons-->
@@ -716,6 +719,7 @@
 <!-- movement-->
 <div class="space" id="movement">
 </div>
+<fieldset>
 <div class="cont2a">
   <div class="subtitle">
    <h2> Movement Sense</h2>
@@ -877,7 +881,7 @@
    <p class="emoji-right">&#128522;</p>
  </div>
 </div>
-
+</fieldset>
 <!-- buttons -->
 <div class="buttons">
   <section class="cont1">
@@ -901,6 +905,7 @@
 <!-- body-->
 <div class="space" id="body">
 </div>
+<fieldset>
 <div class="cont2a">
   <div class="subtitle">
    <h2> Body Position Sense</h2>
@@ -1091,7 +1096,7 @@
    <p class="emoji-right">&#128522;</p>
  </div>
 </div>
-
+</fieldset>
 
 <!-- buttons -->
 <div class="buttons">
@@ -1118,6 +1123,7 @@
 <section>
   <div class="space" id="print">
   </div>
+<fieldset>
 <div class="intro cont2a">
 <h2>Tool completed!</h2>
 </div>
@@ -1132,6 +1138,8 @@
 <div class="space">
 </div>
 </div>
+</fieldset>
+
 <!-- buttons -->
 <div class="buttons">
   <section class="cont1">

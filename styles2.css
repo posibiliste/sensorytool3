@@ -157,7 +157,9 @@ progress::-webkit-progress-value {
   border-radius:.33rem;
 }
 
-
+fieldset{
+  border: none;
+}
 /*subtitle*/
 .subtitle{
   margin-top: 1vh;
