@@ -64,29 +64,39 @@
     <div class="subtitle">
        <h3>Personal Details</h3>
      </div>
-
+<div>
   <label for="name"> Name: </label>
-  <input type="text" id="name" name="name" required size="30">
+</div>
+<div>
+  <input type="text" id="name" name="name" required size="30" aria-label="Name">
+</div>
+<div>
   <label for="date"> Date of evaluation </label>
-  <input type="date" id="date" name="date" required size="10">
+</div>
+<div>
+  <input type="date" id="date" name="date" required size="10" aria-label="Date of evaluation">
+</div>
+<div>
   <label for="time"> Time of evaluation </label>
-  <input type="time" id="time" name="time" required size="10">
+</div>
+<div>
+  <input type="time" id="time" name="time" required size="10" aria-label="Time of evaluation">
+</div>
   <section class="multiple-choice">
   <h3>What institution are you studying in?</h3>
   <div>
     <input type="radio" id="tud" name="school" value="Technological University Dublin"
-           checked>
+           checked aria-label="Technological University Dublin">
     <label for="tud">Technological University Dublin</label>
   </div>
   <div>
-   <input type="radio" id="trinity" name="school" value="Trinity College Dublin">
+   <input type="radio" id="trinity" name="school" value="Trinity College Dublin" aria-label="Trinity College Dublin">
    <label for="trinity">Trinity College Dublin</label>
  </div>
  <div>
-   <input type="radio" id="other" name="school" value="other">
-   <label for="other">Other</label>
-   <label for="otherschool"> (Please type):</label>
-   <input type="text" id="otherschool" name="othertext" size="25">
+   <input type="radio" id="other" name="school" value="other" aria-label="other school radio button">
+   <label for="other">Other (Please type):</label>
+   <input type="text" id="otherschool" name="othertext" size="25" aria-label="text for other school">
  </div>
 <h3>Setting for evaluation</h3>
 <div>
