@@ -337,6 +337,7 @@ button{
 }
 
 .next, #start{
+  appearance:none;
   background-color:#59BEB3;
   border-color: #59BEB3;
   border-radius:3vh;
