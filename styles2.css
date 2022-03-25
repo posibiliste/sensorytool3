@@ -90,6 +90,7 @@ header{
   width:100%;
   align-items: flex-start;
   padding-left: 4vh;
+  text-align: left;
 }
 .form{
   width:100%;
