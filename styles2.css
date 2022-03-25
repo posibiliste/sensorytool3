@@ -68,10 +68,11 @@ header{
   z-index: 5;
   background: #FFF8F0;
   margin-top: 1vh;
+  height:15vh;
 }
 
 /*columns, buttons have a container*/
-.cont0, .cont1,.cont2a, .cont3,.subtitle{
+.cont0, .cont1,.cont2,.cont2a, .cont3,.subtitle,.multiple-choice{
   display: flex;
   flex-direction: column;
 }
@@ -85,6 +86,11 @@ header{
   align-items: flex-end;
   height: 100%;
 }
+.cont2{
+  width:100%;
+  align-items: flex-start;
+  padding-left: 4vh;
+}
 .form{
   width:100%;
   align-items:center;
@@ -93,8 +99,9 @@ header{
 }
 .cont2a{
   width:100%;
-  align-items:center;
+  /*align-items:center;*/
   height: auto;
+  padding-left: 2rem;
 }
 .cont3 {
   width: 25%;
@@ -105,12 +112,25 @@ header{
   display: inline-flex;
   justify-content: space-between;
   /*position: relative;*/
+  margin-top:3vh;
   width:60%;
 }
 
 .pad{
-  background-image: linear-gradient(#59BEB3,#FFF8F0);
+  background-image: linear-gradient(#FFF8F0,#59BEB3,#FFF8F0);
   height: 30vh;
+}
+
+.space{
+  height:15vh;
+}
+
+.intro{
+  text-align: left;
+}
+
+.multiple-choice{
+  text-align: left;
 }
 /* progress bar */
 h1{
@@ -139,7 +159,7 @@ progress::-webkit-progress-value {
 
 /*subtitle*/
 .subtitle{
-  margin-top: 8rem;
+  margin-top: 1vh;
   margin-bottom: auto;
   display: flex;
   align-items: flex-start;
@@ -291,14 +311,16 @@ h4{
 }*/
 button{
   appearance:none;
+  padding:1vh;
+  width: auto;
 }
-.previous, .next{
+.previous, .next,.start{
     margin-top: auto;
     margin-bottom: 1rem;
     font-size: 1.33rem;
     height:2rem;
     line-height: 1rem;
-    width:100%;
+
 }
 .previous{
   /*position: absolute;
@@ -314,18 +336,21 @@ button{
   background-color: none;
 }
 
-.next{
+.next, #start{
   background-color:#59BEB3;
   border-color: #59BEB3;
   border-radius:3vh;
   padding:1vh;
   box-shadow: none;
-  width:auto;
   text-decoration-line: none;
   font-weight: bold;
   color:white;
   /*float: right;*/
   /*margin-right: 1rem;*/
+}
+#start{
+  width:20vh;
+ font-size: 3vh;
 }
 button a{
   text-decoration-line: none;

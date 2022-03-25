@@ -15,10 +15,186 @@
     <progress id="progressbar" max="11" value="1">(Step 1 of circa 11)</progress> -->
    </header>
 
-<!--subtitle-->
 
 <form>
-  <div class="cont2a" id="auditory">
+  <!-- Intro -->
+  <section>
+    <div class="space" id="intro">
+    </div>
+  <div class="intro cont2a">
+  <h2>Introduction</h2>
+  </div>
+  <div class="cont2a">
+  <h4 class="subtitle">
+  Each context and activity has inherent sensory features,
+  which can affect your participation in your student role.
+  This tool is designed to enable you to evaluate your experience
+  of your sensory environments and how they either support or create
+  challenges for participating in the activities of your everyday
+  student life.
+  <br>
+  <br>
+  None of these judgments are calibrated;
+  this worksheet structures your experience of an environment
+  by focusing your attention on key sensory features of the context.
+  It simply provides a place to start in understanding the
+  relationship between you, the student and your context from a sensory point of view.
+  </h4>
+  <div class="space">
+  </div>
+  </div>
+  <!-- buttons -->
+  <div class="buttons">
+  <section class="cont3">
+    <button type="button" id="start">
+      <a href="#personal"> Start</a>
+    </button>
+  </section>
+  </div>
+</section>
+<div class="pad">
+</div>
+
+<!--Personal Data-->
+<div class="space" id="personal">
+</div>
+<section>
+
+  <div class="cont2">
+    <div class="subtitle">
+       <h3>Personal Details</h3>
+     </div>
+
+  <label for="name"> Name: </label>
+  <input type="text" id="name" name="name" required size="50">
+  <label for="date"> Date of evaluation </label>
+  <input type="date" id="date" name="date" required size="10">
+  <label for="time"> Time of evaluation </label>
+  <input type="time" id="time" name="time" required size="10">
+  <section class="multiple-choice">
+  <h3>What institution are you studying in?</h3>
+  <div>
+    <input type="radio" id="tud" name="school" value="Technological University Dublin"
+           checked>
+    <label for="tud">Technological University Dublin</label>
+  </div>
+  <div>
+   <input type="radio" id="trinity" name="school" value="Trinity College Dublin">
+   <label for="trinity">Trinity College Dublin</label>
+ </div>
+ <div>
+   <input type="radio" id="other" name="school" value="other">
+   <label for="other">Other</label>
+   <label for="otherschool"> (Please type):</label>
+   <input type="text" id="otherschool" name="othertext" size="25">
+ </div>
+<h3>Setting for evaluation</h3>
+<div>
+  <input type="radio" id="lecture" name="setting" value="Lecture Hall"
+         checked>
+  <label for="lecture">Lecture hall</label>
+</div>
+<div>
+ <input type="radio" id="laboratory" name="setting" value="laboratory">
+ <label for="laboratory">laboratory</label>
+</div>
+<div>
+ <input type="radio" id="social" name="setting" value="social-setting">
+ <label for="social">Social setting</label>
+</div>
+<div>
+ <input type="radio" id="outdoor" name="setting" value="outdoor-area">
+ <label for="outdoor">Outdoor Area</label>
+</div>
+<div>
+ <input type="radio" id="office" name="setting" value="office">
+ <label for="office">office</label>
+</div>
+<div>
+ <input type="radio" id="student" name="setting" value="student-accomodation">
+ <label for="student">Student accomodation</label>
+</div>
+<div>
+ <input type="radio" id="other" name="setting" value="other">
+ <label for="other">Other</label>
+ <label for="other-setting"> (Please type):</label>
+ <input type="text" id="other-setting" name="other-setting" size="25">
+</div>
+<h3>In this environment, what sort of activities you usually participate in?</h3>
+<div>
+  <input type="checkbox" id="class" name="activities" value="class" checked>
+  <label for="lecture">Class (lecture/tutorial/seminar)</label>
+</div>
+<div>
+  <input type="checkbox" id="practical" name="activities" value="practical-classes">
+  <label for="practical">Practical Classes (labs/studios/workshops)</label>
+</div>
+<div>
+  <input type="checkbox" id="study" name="activities" value="study">
+  <label for="study">Study/Writing assignments/Self-Directed Learning</label>
+</div>
+<div>
+  <input type="checkbox" id="group" name="activities" value="group-work">
+  <label for="group">Group work</label>
+</div>
+<div>
+  <input type="checkbox" id="socialising" name="activities" value="socialising">
+  <label for="socialising">Socialising</label>
+</div>
+<div>
+  <input type="checkbox" id="fun" name="activities" value="fun">
+  <label for="fun">Fun / Leisure activities</label>
+</div>
+<div>
+  <input type="checkbox" id="eat" name="activities" value="eating">
+  <label for="eat">Eating</label>
+</div>
+<div>
+  <input type="checkbox" id="self" name="activities" value="self-care">
+  <label for="self">Self-care activities</label>
+</div>
+<div>
+  <input type="checkbox" id="physical" name="activities" value="physical-activities">
+  <label for="physical">Physical activities</label>
+</div>
+<div>
+  <input type="checkbox" id="support" name="activities" value="support-services">
+  <label for="support">Support services</label>
+</div>
+<div>
+ <input type="checkbox" id="other" name="activities" value="other">
+ <label for="other">Other</label>
+ <label for="other-activities"> (Please type):</label>
+ <input type="text" id="other-activities" name="other-activities" size="25">
+</div>
+
+
+</section>
+
+</div>
+</section>
+<div class="buttons">
+  <section class="cont1">
+  <button type="button" class="previous">
+    <a href="#intro">Previous</a>
+  </button>
+</section>
+<section class="cont3">
+  <button type="button" class="next">
+    <a href="#auditory">Next</a>
+  </button>
+</section>
+</div>
+
+<div class="pad">
+</div>
+
+<div class="space" id="auditory">
+</div>
+
+
+  <!--subtitle-->
+  <div class="cont2a" >
     <div class="subtitle">
      <h2> Auditory </h2>
      <h4> Rate the environmental qualities of the setting you are in and the impact it has on your participation </h4>
@@ -184,12 +360,12 @@
 <div class="buttons">
   <section class="cont1">
   <button type="button" class="previous">
-    <a href="#acivities">&laquo; Previous</a>
+    <a href="#acivities">Previous</a>
   </button>
 </section>
 <section class="cont3">
   <button type="button" class="next">
-    <a href="#visual"> Next &raquo;</a>
+    <a href="#visual">Next</a>
   </button>
 </section>
 </div>
@@ -200,7 +376,9 @@
 
 
 <!--Visual-->
-<div class="cont2a" id="visual">
+<div class="space"id="visual">
+</div>
+<div class="cont2a" >
   <div class="subtitle">
    <h2> Visual </h2>
    <h4> Rate the environmental qualities of the setting you are in and the impact it has on your participation </h4>
@@ -364,12 +542,12 @@
       <div class="buttons">
         <section class="cont1">
         <button type="button" class="previous">
-          <a href="#auditory">&laquo; Previous</a>
+          <a href="#auditory">Previous</a>
         </button>
       </section>
       <section class="cont3">
         <button type="button" class="next">
-          <a href="#touch"> Next &raquo;</a>
+          <a href="#touch"> Next</a>
         </button>
       </section>
       </div>
@@ -378,7 +556,9 @@
       </div>
 
 <!-- touch -->
-<div class="cont2a" id="touch">
+<div class="space" id="touch">
+</div>
+<div class="cont2a">
   <div class="subtitle">
    <h2> Touch </h2>
    <h4> Rate the environmental qualities of the setting you are in and the impact it has on your participation </h4>
@@ -509,12 +689,12 @@
 <div class="buttons">
   <section class="cont1">
   <button type="button" class="previous">
-    <a href="#visual">&laquo; Previous</a>
+    <a href="#visual">Previous</a>
   </button>
 </section>
 <section class="cont3">
   <button type="button" class="next">
-    <a href="#movement"> Next &raquo;</a>
+    <a href="#movement"> Next</a>
   </button>
 </section>
 </div>
@@ -524,7 +704,9 @@
 
 
 <!-- movement-->
-<div class="cont2a" id="movement">
+<div class="space" id="movement">
+</div>
+<div class="cont2a">
   <div class="subtitle">
    <h2> Movement Sense</h2>
    <h4> Rate the environmental qualities of the setting you are in and the impact it has on your participation </h4>
@@ -690,12 +872,12 @@
 <div class="buttons">
   <section class="cont1">
   <button type="button" class="previous">
-    <a href="#touch">&laquo; Previous</a>
+    <a href="#touch">Previous</a>
   </button>
 </section>
 <section class="cont3">
   <button type="button" class="next">
-    <a href="#body"> Next &raquo;</a>
+    <a href="#body"> Next</a>
   </button>
 </section>
 </div>
@@ -707,7 +889,9 @@
 
 
 <!-- body-->
-<div class="cont2a" id="body">
+<div class="space" id="body">
+</div>
+<div class="cont2a">
   <div class="subtitle">
    <h2> Body Position Sense</h2>
    <h4> Rate the environmental qualities of the setting you are in and the impact it has on your participation </h4>
@@ -835,12 +1019,12 @@
 <div class="buttons">
   <section class="cont1">
   <button type="button" class="previous">
-    <a href="#movement">&laquo; Previous</a>
+    <a href="#movement">Previous</a>
   </button>
 </section>
 <section class="cont3">
   <button type="button" class="next">
-    <a href="#smell"> Next &raquo;</a>
+    <a href="#smell"> Next</a>
   </button>
 </section>
 </div>
@@ -850,7 +1034,9 @@
 </div>
 
 <!-- smell-->
-<div class="cont2a" id="smell">
+<div class="space" id="smell">
+</div>
+<div class="cont2a" >
   <div class="subtitle">
    <h2> Smell</h2>
    <h4> Rate the environmental qualities of the setting you are in and the impact it has on your participation </h4>
@@ -901,12 +1087,12 @@
 <div class="buttons">
   <section class="cont1">
   <button type="button" class="previous">
-    <a href="#body">&laquo; Previous</a>
+    <a href="#body">Previous</a>
   </button>
 </section>
 <section class="cont3">
   <button type="button" class="next">
-    <a href="#print"> Next &raquo;</a>
+    <a href="#print"> Next</a>
   </button>
 </section>
 </div>
@@ -917,13 +1103,40 @@
 
 
 
-</form>
- <!--buttons -->
 
- <footer>
-  <input type="button" class="next print" onclick="window.print()" value="Print PDF">
+
+<section>
+  <div class="space" id="intro">
+  </div>
+<div class="intro cont2a">
+<h2>Tool completed!</h2>
+</div>
+<div class="cont2a">
+<h4 class="subtitle">
+    This tool has been adapted from the Ecological Assessment of Sensory Processing Features of the Context with permission from its developer, Prof Winnie Dunn, PhD, OTR, FAOTA. The Ecological Assessment of Sensory Processing Features of the Context is a part of The Sensory Profile 2 Family of Assessments. Copyright © 2014 NCS Pearson, Inc. All rights reserved.
+
+  The tool has been developed as a collaboration between Technological University Dublin and Trinity College Dublin, the University of Dublin, by the development team of Kieran Lewis, Dr Clodagh Nolan, Aoife Dempsey, Claudia M. Fernandez Rivera, Deirdre Staunton and Declan Treanor.
+
+  Funding for the development of this tool has been provided by Higher Education Authority through the Fund for Students with Disabilities.
+</h4>
+<div class="space">
+</div>
+</div>
+<!-- buttons -->
+<div class="buttons">
+  <section class="cont1">
+  <button type="button" class="previous">
+    <a href="#intro">Previous</a>
+  </button>
+</section>
+<footer>
+ <input type="button" class="next print" onclick="window.print()" value="Print PDF">
 <!--<input type="button" class="next" onclick="GeneratePdf();" value="Print PDF">-->
- </footer>
+</footer>
+</div>
+
+</section>
+ </form>
 </body>
   <!-- <script src="pdf.js">    </script> -->
   <!-- <script src="slider.js"></script> -->
