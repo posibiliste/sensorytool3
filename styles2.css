@@ -160,6 +160,9 @@ progress::-webkit-progress-value {
 fieldset{
   border: none;
 }
+legend{
+  display: none;
+}
 /*subtitle*/
 .subtitle{
   margin-top: 1vh;
